@@ -13,11 +13,11 @@ const Footer = () => {
                     href="#"
                     class="text-xl font-bold text-gray-800 text-white hover:text-gray-700 dark:hover:text-gray-300"
                   >
-<<<<<<< HEAD
+
                     OMEC
-=======
+
                     BlueSprint Inc.
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
+
                   </a>
                 </div>
 
@@ -105,18 +105,18 @@ const Footer = () => {
                   </a>
                 </div>
 
-<<<<<<< HEAD
+
 
                 <div>
                   <h3 class="text-gray-700 uppercase text-white">Contact</h3>
                   <span class="block mt-2 text-sm text-white dark:text-gray-400 hover:underline">
                     +234 81 464 166 76
-=======
+</span>
                 <div>
                   <h3 class="text-gray-700 uppercase text-white">Contact</h3>
                   <span class="block mt-2 text-sm text-white dark:text-gray-400 hover:underline">
                   +234 81 464 166 76
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
+
                   </span>
                   <span class="block mt-2 text-sm text-white dark:text-gray-400 hover:underline">
                     omechosp@gmail.com
@@ -132,14 +132,15 @@ const Footer = () => {
           <div>
             <p class="text-center text-gray-800 text-white">
               © OMEC 2022 - All rights reserved
-<<<<<<< HEAD
+
             </p>
             <p class="text-center text-gray-800 text-white">
               Created by Bluesprint Inc.
-=======
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
+
+
             </p>
           </div>
+        </div>
         </div>
       </footer>
     </div>

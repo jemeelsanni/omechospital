@@ -49,10 +49,14 @@ const Appointment = () => {
             </svg>
 
             <span class="mt-2">
-              No 4B, Sabo Line Isale<br/>
-              Opposite Temitope Hospital<br/>
-              Amilegbe<br/>
-              Ilorin, Kwara State<br/>
+              No 4B, Sabo Line Isale
+              <br />
+              Opposite Temitope Hospital
+              <br />
+              Amilegbe
+              <br />
+              Ilorin, Kwara State
+              <br />
               Nigeria
             </span>
           </a>
@@ -86,12 +90,8 @@ const Appointment = () => {
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
-
-<<<<<<< HEAD
             <span class="mt-2">.com</span>
-=======
             <span class="mt-2">omechsop@gmail.com</span>
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
           </a>
         </div>
 

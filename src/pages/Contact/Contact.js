@@ -58,21 +58,26 @@ const Contact = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-<<<<<<< HEAD
-                <span>No 4B, Sabo Line Isale
-                      Opposite Temitope Hospital<br/>
-                      Amilegbe<br/>
-                      Ilorin, Kwara State<br/>
-                      Nigeria.
-                  </span>
-=======
-                <span>No 4B, Sabo Line Isale<br/>
-                      Opposite Temitope Hospital<br/>
-                      Amilegbe<br/>
-                      Ilorin, Kwara State<br/>
-                      Nigeria
+                <span>
+                  No 4B, Sabo Line Isale Opposite Temitope Hospital
+                  <br />
+                  Amilegbe
+                  <br />
+                  Ilorin, Kwara State
+                  <br />
+                  Nigeria.
                 </span>
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
+                <span>
+                  No 4B, Sabo Line Isale
+                  <br />
+                  Opposite Temitope Hospital
+                  <br />
+                  Amilegbe
+                  <br />
+                  Ilorin, Kwara State
+                  <br />
+                  Nigeria
+                </span>
               </p>
               <p className="flex items-center">
                 <svg

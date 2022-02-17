@@ -29,7 +29,8 @@ const Services = () => {
           Services offered by Opeyemi Mega Eye Center.
         </h1>
         <p className="text-center pb-5">
-        Opeyemi Mega Eye Clinic has the best equipment to give you the clinical service you deserve
+          Opeyemi Mega Eye Clinic has the best equipment to give you the
+          clinical service you deserve
         </p>
         <section className="m-4 md:m-8 dark:bg-coolGray-800 dark:text-coolGray-100">
           {/* individual services */}
@@ -44,29 +45,24 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/eye-disease.png" />
               <h3 className="my-3 text-3xl font-semibold">Clinicals</h3>
               <div className="space-y-1 leading-tight">
-<<<<<<< HEAD
-               <ol>
-               <ul>General ophthalmology clinic</ul>
-              <ul>Glaucoma clinic</ul>
-              <ul>Refraction service</ul>
-              <ul>Glass dispensing</ul>
-              <ul>Eye surgeries</ul>
-              <ul>Preventive eye care</ul>
-              <ul>School eye care</ul>
-              <ul>Outreach service</ul>
-               </ol>
-=======
-                
-                  <li>General ophthalmology clinic </li>
-                  <li>Glaucoma clinic</li>
-                  <li>Refraction service</li>
-                  <li>Glass dispensing</li>
-                  <li>Eye surgeries</li>
-                  <li>Preventive eye care</li>
-                  <li>School eye care</li>
-                  <li>Outreach reach service </li>
-                
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
+                <ol>
+                  <ul>General ophthalmology clinic</ul>
+                  <ul>Glaucoma clinic</ul>
+                  <ul>Refraction service</ul>
+                  <ul>Glass dispensing</ul>
+                  <ul>Eye surgeries</ul>
+                  <ul>Preventive eye care</ul>
+                  <ul>School eye care</ul>
+                  <ul>Outreach service</ul>
+                </ol>
+                <li>General ophthalmology clinic </li>
+                <li>Glaucoma clinic</li>
+                <li>Refraction service</li>
+                <li>Glass dispensing</li>
+                <li>Eye surgeries</li>
+                <li>Preventive eye care</li>
+                <li>School eye care</li>
+                <li>Outreach reach service </li>
               </div>
             </div>
             {/* item */}
@@ -77,20 +73,17 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/eye-checked.png" />
               <h3 className="my-3 text-3xl font-semibold">Investigations</h3>
               <div className="space-y-1 leading-tight">
-<<<<<<< HEAD
-              <ol>
-              <ul>Central Virtual Field</ul>
-              <ul>Autorefraction</ul>
-              <ul>Biometry</ul>
-              <ul>Pachymetry</ul>
-              <ul>Ocular Cohorence Tomography + Angiography</ul>
-              <ul>A- scan</ul>
-              <ul>B- scan</ul>
-              <ul>Fundus Photography + Angiography</ul>
-              <ul>Intraocular pressure</ul>
-               </ol>
-=======
-               
+                <ol>
+                  <ul>Central Virtual Field</ul>
+                  <ul>Autorefraction</ul>
+                  <ul>Biometry</ul>
+                  <ul>Pachymetry</ul>
+                  <ul>Ocular Cohorence Tomography + Angiography</ul>
+                  <ul>A- scan</ul>
+                  <ul>B- scan</ul>
+                  <ul>Fundus Photography + Angiography</ul>
+                  <ul>Intraocular pressure</ul>
+                </ol>
                 <li>Central Virtual Field</li>
                 <li>Autorefraction</li>
                 <li>Biometry</li>
@@ -100,8 +93,6 @@ const Services = () => {
                 <li>B- scan</li>
                 <li>Fundus Photography + Angiography</li>
                 <li>Intraocular pressure</li>
-               
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
               </div>
             </div>
             {/*
@@ -119,8 +110,6 @@ const Services = () => {
             </div>
             */}
 
-            
-
             <div
               style={{ border: "1px solid #f0f0f0" }}
               className="flex flex-col items-center p-4"
@@ -128,7 +117,6 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/hand-holding-heart.png" />
               <h3 className="my-3 text-3xl font-semibold">Our Facilites</h3>
               <div className="space-y-1 leading-tight">
-<<<<<<< HEAD
                 <ol>Standard sterilizing facilities</ol>
                 <ol>A pharmaceutical dispensary unit</ol>
                 <ol>A standard nursing station</ol>
@@ -138,24 +126,20 @@ const Services = () => {
                 <ol>Refractometer / keratometer</ol>
                 <ol>Laser Machine</ol>
                 <ol>Pressure Check Machine</ol>
-=======
-                
-                  <li>20 bedded space</li>
-                  <li>A standard operation theatre</li>
-                  <li>Two (2) opening microscopes and tables</li>
-                  <li>Standard sterilizing facilities</li>
-                  <li>A pharmaceutical dispensary unit</li>
-                  <li>Two standard investigation rooms</li>
-                  <li>Three consulting rooms</li>
-                  <li>A standard nursing station</li>
-                  <li>OCT</li>
-                  <li>CVF</li>
-                  <li>A- scan</li>
-                  <li>Refractometer / keratometer</li>
-                  <li>Laser Machine</li>
-                  <li>Pressure Check Machine</li>
-                
->>>>>>> 3d4803ab69259008f2ce5b6d0e7471cabc296e23
+                <li>20 bedded space</li>
+                <li>A standard operation theatre</li>
+                <li>Two (2) opening microscopes and tables</li>
+                <li>Standard sterilizing facilities</li>
+                <li>A pharmaceutical dispensary unit</li>
+                <li>Two standard investigation rooms</li>
+                <li>Three consulting rooms</li>
+                <li>A standard nursing station</li>
+                <li>OCT</li>
+                <li>CVF</li>
+                <li>A- scan</li>
+                <li>Refractometer / keratometer</li>
+                <li>Laser Machine</li>
+                <li>Pressure Check Machine</li>
               </div>
             </div>
             {/*
