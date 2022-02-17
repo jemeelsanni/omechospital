@@ -33,150 +33,12 @@ const Homepage = () => {
             </p>
             <button class="btn btn-primary">Book Appointment</button>
 
-            <h1 class="mb-5 text-5xl font-bold">
-              Welcome to Opeyemi Mega Eye Center.
-            </h1>
-            <p class="mb-5">
-              Opeyemi Mega Eye Centre is a world class health facility dedicated
-              to providing all your Eye health needs, not only curative but also
-              preventives. We boast of cutting edge equipment which aid in the
-              diagnosis and treatment of medical and surgical eye conditions,
-              well-established Professional eye hospital based in Ilorin, Kwara
-              State.
-            </p>
-            <button class="btn btn-primary">Book Appointment.</button>
+            
           </div>
         </div>
-      </div>
-      <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-coolGray-50">
-            OUR SERVICES
-          </h2>
-        </div>
-        <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-coolGray-50">
-              OPTICALS
-            </h3>
-            <p className="mt-3 text-lg dark:text-coolGray-400">
-              Our Optometrists are here to serve you with the highest standards
-              and quality products
-            </p>
-            <div className="mt-12 space-y-12">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="w-7 h-7"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-coolGray-50">
-                    Per ei quaeque sensibus
-                  </h4>
-                  <p className="mt-2 dark:text-coolGray-400">
-                    Ex usu illum iudico molestie. Pro ne agam facete
-                    mediocritatem, ridens labore facete mea ei. Pro id apeirian
-                    dignissim.
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="w-7 h-7"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-coolGray-50">
-                    Cu imperdiet posidonium sed
-                  </h4>
-                  <p className="mt-2 dark:text-coolGray-400">
-                    Amet utinam aliquando ut mea, malis admodum ocurreret nec
-                    et, elit tibique cu nec. Nec ex maluisset inciderint, ex
-                    quis.
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="w-7 h-7"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-coolGray-50">
-                    Nulla omittam sadipscing mel ne
-                  </h4>
-                  <p className="mt-2 dark:text-coolGray-400">
-                    At sed possim oporteat probatus, justo graece ne nec, minim
-                    commodo legimus ut vix. Ut eos iudico quando soleat, nam
-                    modus.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div aria-hid en="true" className="mt-10 lg:mt-0">
-            <img
-              src={glasses}
-              alt=""
-              className="mx-auto rounded-lg shadow-lg dark:bg-coolGray-500"
-            />
-          </div>
-        </div>
-      </div>
+       </div>
       <div>
-        <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-          <div className="lg:col-start-2">
-            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-coolGray-50">
-              CLINICAL SERVICES
-            </h3>
-            <p className="mt-3 text-lg dark:text-coolGray-400">
-              OMEC has the best equipment to give you the clinical service you
-              deserve
-            </p>
-          </div>
-        </div>
+        
         {/**Welcome Stops here */}
 
         {/**Services Starts here */}
@@ -241,26 +103,6 @@ const Homepage = () => {
         {/** Eye conditions starts  */}
         <section className="dark:bg-coolGray-800 dark:text-coolGray-100 ">
           <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-coolGray-900"
-            >
-              <img
-                src="https://source.unsplash.com/random/480x360"
-                alt=""
-                className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-coolGray-500"
-              />
-              <div className="p-6 space-y-2 lg:col-span-5">
-                <h3 className="text-2xl font-semibold sm:text-4xl ">
-                  SURGICAL SERVICES
-                </h3>
-                <p>
-                  Be in the safest hands of our Ophthalmologists as they perfect
-                  your vision using top-notch corrective measures
-                </p>
-              </div>
-            </a>
             <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <div className="grid justify-center grid-cols-1  sm:grid-cols-2 lg:grid-cols-3">
                 <a
@@ -346,92 +188,7 @@ const Homepage = () => {
                     </p>
                   </div>
                 </a>
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900 hidden sm:block"
-                >
-                  <img
-                    role="presentation"
-                    className="object-cover w-full rounded h-44 dark:bg-coolGray-500"
-                    src="https://source.unsplash.com/random/480x360?4"
-                  />
-                  <div className="p-6 space-y-2">
-                    <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                      Macular Degeneration
-                    </h3>
-                    <span className="text-xs dark:text-coolGray-400">
-                      January 24, 2021
-                    </span>
-                    <p>
-                      Macular degeneration is the deterioration/breakdown of the
-                      macula. The macular is a small area in the retina at the
-                      back of the eye that allows you to see fine details
-                      clearly and perform activities such as reading and
-                      driving. When the macula does not function correctly, your
-                      central vision can be affected by blurriness, dark areas
-                      or distortion.
-                    </p>
-                  </div>
-                </a>
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900 hidden sm:block"
-                >
-                  <img
-                    role="presentation"
-                    className="object-cover w-full rounded h-44 dark:bg-coolGray-500"
-                    src="https://source.unsplash.com/random/480x360?5"
-                  />
-                  <div className="p-6 space-y-2">
-                    <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                      Squint
-                    </h3>
-                    <span className="text-xs dark:text-coolGray-400">
-                      January 25, 2021
-                    </span>
-                    <p>
-                      Squint also known Strabismus is a visual problem in which
-                      the eyes to be misaligned and point in different
-                      directions. One eye may look straight ahead, while the
-                      other eye turns inward, outward, upward, or downward. The
-                      eye turn may be consistent, or alternate. It is also known
-                      as strabismus
-                    </p>
-                  </div>
-                </a>
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900 hidden sm:block"
-                >
-                  <img
-                    role="presentation"
-                    className="object-cover w-full rounded h-44 dark:bg-coolGray-500"
-                    src="https://source.unsplash.com/random/480x360?6"
-                  />
-                  <div className="p-6 space-y-2">
-                    <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                      Red Eye
-                    </h3>
-                    <span className="text-xs dark:text-coolGray-400">
-                      January 26, 2021
-                    </span>
-                    <p>
-                      It involves inflammation of the outer layer of the eye and
-                      inside of the eyelid. Eye redness may also be due to
-                      swollen or dilated blood vessels, which cause the surface
-                      of the eye to look red, or bloodshot. It is often times an
-                      ophthalmologic emergency. It involves inflammation of the
-                      outer layer of the eye and inside of the eyelid. Eye
-                      redness may also be due to swollen or dilated blood
-                      vessels, which cause the surface of the eye to look red,
-                      or bloodshot. It is often times an ophthalmologic
-                      emergency.
-                    </p>
-                  </div>
-                </a>
+                
               </div>
               <div className="flex justify-center">
                 <button
@@ -478,10 +235,6 @@ const Homepage = () => {
                     OUTREACH
                   </h1>
 
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Outreach
-                  </h1>
-
                   <p class="text-gray-500 dark:text-gray-300">
                     Outreach in Opeyemi Eye Clinic make a quiet impact in the
                     field of sight restoration and prevention of blindness in
@@ -522,14 +275,6 @@ const Homepage = () => {
                     many things you can do to keep them healthy and make sure
                     you are seeing your best.
                   </p>
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Eyecare Measures
-                  </h1>
-                  <p class="text-gray-500 dark:text-gray-300">
-                    Your eyes are an important part of your health. There are
-                    many things you can do to keep them healthy and make sure
-                    you are seeing your best.
-                  </p>
                 </div>
 
                 <div class="space-y-3">
@@ -554,9 +299,7 @@ const Homepage = () => {
                     OUR CLINIC
                   </h1>
 
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Our Clinic
-                  </h1>
+                  
 
                   <p class="text-gray-500 dark:text-gray-300">
                     Who we are and what we do
@@ -583,20 +326,6 @@ const Homepage = () => {
                       />
                     </svg>
                   </span>
-
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Working Hours
-                  </h1>
-
-                  <ol class="text-gray-500 dark:text-gray-300">
-                    <ul>Monday: 8am – 8pm</ul>
-                    <ul>Tuesday: 8am– 8pm</ul>
-                    <ul>Wednesday: 8am – 8pm</ul>
-                    <ul>Thursday: 8am – 8pm</ul>
-                    <ul>Friday: 8am – 8pm</ul>
-                    <ul>Saturday: 8am – 8pm</ul>
-                    <ul>Sun: Surgery</ul>
-                  </ol>
 
                   <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
                     Working Hours
