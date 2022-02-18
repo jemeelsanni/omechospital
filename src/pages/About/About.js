@@ -57,30 +57,7 @@ const About = () => {
                   we continue updating and upgrading to ensure that you get the
                   best.
                 </p>
-                <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md text-center">
-                  Opeyemi Mega Eye Centre is a world class health facility
-                  dedicated to providing all your Eye health needs, not only
-                  curative but also preventives. We boast of cutting edge
-                  equipment which aid in the diagnosis and treatment of medical
-                  and surgical eye conditions, well-established Professional eye
-                  hospital based in Ilorin, Kwara State. It is a 20-bed capacity
-                  hospital that has all the units of a General Eye Hospital
-                  including specialist service, high tech investigation
-                  equipments and pharmacy.
-                  <br />
-                  We have highly trained and dedicated staff who provide
-                  excellent care.
-                  <br />
-                  Our computerized systems ensures confidentiality and
-                  continuity. Our hospital is well endowed with a team of
-                  experts and professionals with some specialization in
-                  delivering quality healthcare solutions with professionalism
-                  and according to International standard with thorough
-                  understanding of the Nigerian service requirements and
-                  culture. We aim to set a standard for medical eye care hence
-                  we continue updating and upgrading to ensure that you get the
-                  best.
-                </p>
+                
 
                 <div class="flex items-center mt-6 -mx-2">
                   <a class="mx-2" href="#" aria-label="Twitter">
@@ -148,12 +125,7 @@ const About = () => {
               <p className="text-4xl font-bold leading-none lg:text-6xl">20</p>
               <p className="text-sm sm:text-base">Bedspaces</p>
             </div>
-            <div className="flex flex-col justify-start m-2 lg:m-6">
-              <p className="text-4xl font-bold leading-none lg:text-6xl">3</p>
-
-              <p className="text-4xl font-bold leading-none lg:text-6xl">20+</p>
-              <p className="text-sm sm:text-base">Bedspaces</p>
-            </div>
+            
             <div className="flex flex-col justify-start m-2 lg:m-6">
               <p className="text-4xl font-bold leading-none lg:text-6xl">4</p>
 

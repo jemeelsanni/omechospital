@@ -59,7 +59,8 @@ const Contact = () => {
                   ></path>
                 </svg>
                 <span>
-                  No 4B, Sabo Line Isale Opposite Temitope Hospital
+                  No 4B, Sabo Line Isale<br/>
+                   Opposite Temitope Hospital
                   <br />
                   Amilegbe
                   <br />
@@ -67,17 +68,7 @@ const Contact = () => {
                   <br />
                   Nigeria.
                 </span>
-                <span>
-                  No 4B, Sabo Line Isale
-                  <br />
-                  Opposite Temitope Hospital
-                  <br />
-                  Amilegbe
-                  <br />
-                  Ilorin, Kwara State
-                  <br />
-                  Nigeria
-                </span>
+              
               </p>
               <p className="flex items-center">
                 <svg

@@ -45,16 +45,6 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/eye-disease.png" />
               <h3 className="my-3 text-3xl font-semibold">Clinicals</h3>
               <div className="space-y-1 leading-tight">
-                <ol>
-                  <ul>General ophthalmology clinic</ul>
-                  <ul>Glaucoma clinic</ul>
-                  <ul>Refraction service</ul>
-                  <ul>Glass dispensing</ul>
-                  <ul>Eye surgeries</ul>
-                  <ul>Preventive eye care</ul>
-                  <ul>School eye care</ul>
-                  <ul>Outreach service</ul>
-                </ol>
                 <li>General ophthalmology clinic </li>
                 <li>Glaucoma clinic</li>
                 <li>Refraction service</li>
@@ -73,17 +63,6 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/eye-checked.png" />
               <h3 className="my-3 text-3xl font-semibold">Investigations</h3>
               <div className="space-y-1 leading-tight">
-                <ol>
-                  <ul>Central Virtual Field</ul>
-                  <ul>Autorefraction</ul>
-                  <ul>Biometry</ul>
-                  <ul>Pachymetry</ul>
-                  <ul>Ocular Cohorence Tomography + Angiography</ul>
-                  <ul>A- scan</ul>
-                  <ul>B- scan</ul>
-                  <ul>Fundus Photography + Angiography</ul>
-                  <ul>Intraocular pressure</ul>
-                </ol>
                 <li>Central Virtual Field</li>
                 <li>Autorefraction</li>
                 <li>Biometry</li>
@@ -117,15 +96,7 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/hand-holding-heart.png" />
               <h3 className="my-3 text-3xl font-semibold">Our Facilites</h3>
               <div className="space-y-1 leading-tight">
-                <ol>Standard sterilizing facilities</ol>
-                <ol>A pharmaceutical dispensary unit</ol>
-                <ol>A standard nursing station</ol>
-                <ol>OCT</ol>
-                <ol>CVF</ol>
-                <ol>A- scan</ol>
-                <ol>Refractometer / keratometer</ol>
-                <ol>Laser Machine</ol>
-                <ol>Pressure Check Machine</ol>
+                
                 <li>20 bedded space</li>
                 <li>A standard operation theatre</li>
                 <li>Two (2) opening microscopes and tables</li>

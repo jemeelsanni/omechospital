@@ -102,9 +102,9 @@ const Homepage = () => {
 
         {/** Eye conditions starts  */}
         <section className="dark:bg-coolGray-800 dark:text-coolGray-100 ">
-          <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+          <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
             <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="grid justify-center grid-cols-1  sm:grid-cols-2 lg:grid-cols-3">
+              <div className="container flex-1 rounded-lg overflow-hidden shadow-sm relative">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -116,9 +116,6 @@ const Homepage = () => {
                     src={ocular}
                   />
                   <div className="p-6 space-y-2">
-                    <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                      Glaucoma
-                    </h3>
 
                     <h3 className="text-2xl font-semibold ">Glaucoma</h3>
 
@@ -133,6 +130,8 @@ const Homepage = () => {
                     </p>
                   </div>
                 </a>
+              </div>
+              <div className="container flex-1 rounded-lg overflow-hidden shadow-sm relative">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -160,20 +159,18 @@ const Homepage = () => {
                     </p>
                   </div>
                 </a>
+              </div>
+              <div className="container flex-1 rounded-lg overflow-hidden shadow-sm relative">
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900"
-                >
+                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900">
                   <img
                     role="presentation"
                     className="object-cover w-full rounded h-44 dark:bg-coolGray-500"
                     src={nice}
                   />
                   <div className="p-6 space-y-2">
-                    <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                      Photophobia
-                    </h3>
                     <h3 className="text-2xl font-semibold ">Red Eyes</h3>
                     <span className="text-xs dark:text-coolGray-400">
                       January 23, 2021
@@ -188,9 +185,12 @@ const Homepage = () => {
                     </p>
                   </div>
                 </a>
-                
               </div>
-              <div className="flex justify-center">
+                
+              
+              
+            </div>
+            <div className="flex justify-center">
                 <button
                   type="button"
                   className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-coolGray-900 dark:text-coolGray-400"
@@ -198,9 +198,9 @@ const Homepage = () => {
                   Load more posts...
                 </button>
               </div>
-            </div>
           </div>
         </section>
+
         {/**eye condition stops */}
         {/**Explore starts */}
         <section class="bg-metal dark:bg-gray-900 ">
@@ -330,13 +330,13 @@ const Homepage = () => {
                   <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
                     Working Hours
                   </h1>
-                  <p>Monday: 8am – 8pm</p>
-                  <p>Tuesday: 8am– 8pm</p>
-                  <p>Wednesday: 8am – 8pm</p>
-                  <p>Thursday: 8am – 8pm</p>
-                  <p>Friday: 8am – 8pm</p>
-                  <p>Saturday: 8am – 8pm</p>
-                  <p>Sun: Surgery</p>
+                  <li>Monday: 8am – 8pm</li>
+                  <li>Tuesday: 8am– 8pm</li>
+                  <li>Wednesday: 8am – 8pm</li>
+                  <li>Thursday: 8am – 8pm</li>
+                  <li>Friday: 8am – 8pm</li>
+                  <li>Saturday: 8am – 8pm</li>
+                  <li>Sun: Surgery</li>
                 </div>
               </div>
 
