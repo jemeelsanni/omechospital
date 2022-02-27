@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Carousel from "../../components/Carousel";
 
 const Services = () => {
   return (
@@ -96,7 +95,6 @@ const Services = () => {
               <img src="https://img.icons8.com/windows/32/000000/hand-holding-heart.png" />
               <h3 className="my-3 text-3xl font-semibold">Our Facilites</h3>
               <div className="space-y-1 leading-tight">
-                
                 <li>20 bedded space</li>
                 <li>A standard operation theatre</li>
                 <li>Two (2) opening microscopes and tables</li>

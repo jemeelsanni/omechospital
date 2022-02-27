@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/Carousel";
+
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import glasses from "../images/glasses.jpg";
@@ -9,6 +9,9 @@ import pachymetry from "../images/pachymetry.png";
 import ocular from "../images/ocular.jpg";
 import nice from "../images/nice.jpg";
 import refractor from "../images/refractor.jpg";
+import pic from "../images/pic.jpg";
+import { CarouselData } from "../components/carousel/CarouselData";
+import Carousel from "../components/carousel/Carousel";
 
 const Homepage = () => {
   return (
@@ -32,17 +35,29 @@ const Homepage = () => {
               preventives.
             </p>
             <button class="btn btn-primary">Book Appointment</button>
-
-            
           </div>
         </div>
-       </div>
+      </div>
       <div>
-        
         {/**Welcome Stops here */}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
+        <Carousel slides={CarouselData} />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
         {/**Services Starts here */}
-        <section className="dark:bg-coolGray-800 dark:text-coolGray-100 bg-metal">
+        <section className="dark:bg-coolGray-800 dark:text-coolGray-100 bg-black">
           <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
             <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <div className="container flex-1 rounded-lg overflow-hidden shadow-sm relative">
@@ -99,7 +114,12 @@ const Homepage = () => {
           </div>
         </section>
         {/**Services ends here */}
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         {/** Eye conditions starts  */}
         <section className="dark:bg-coolGray-800 dark:text-coolGray-100 ">
           <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
@@ -116,7 +136,6 @@ const Homepage = () => {
                     src={ocular}
                   />
                   <div className="p-6 space-y-2">
-
                     <h3 className="text-2xl font-semibold ">Glaucoma</h3>
 
                     <span className="text-xs dark:text-coolGray-400">
@@ -164,7 +183,8 @@ const Homepage = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900">
+                  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-coolGray-900"
+                >
                   <img
                     role="presentation"
                     className="object-cover w-full rounded h-44 dark:bg-coolGray-500"
@@ -186,24 +206,21 @@ const Homepage = () => {
                   </div>
                 </a>
               </div>
-                
-              
-              
             </div>
             <div className="flex justify-center">
-                <button
-                  type="button"
-                  className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-coolGray-900 dark:text-coolGray-400"
-                >
-                  Load more posts...
-                </button>
-              </div>
+              <button
+                type="button"
+                className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-coolGray-900 dark:text-coolGray-400"
+              >
+                Load more posts...
+              </button>
+            </div>
           </div>
         </section>
 
         {/**eye condition stops */}
         {/**Explore starts */}
-        <section class="bg-metal dark:bg-gray-900 ">
+        <section class="bg-black dark:bg-gray-900 ">
           <div class="container px-6 py-10 mx-auto">
             <div class="mt-2">
               <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
@@ -214,7 +231,7 @@ const Homepage = () => {
             <div class="mt-8 xl:mt-12 lg:flex lg:items-center">
               <div class="w-full lg:w-1/2 grid grid-cols-1 gap-8 xl:gap-16 md:grid-cols-2">
                 <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -231,11 +248,11 @@ const Homepage = () => {
                     </svg>
                   </span>
 
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+                  <h1 class="text-2xl font-semibold text-gray-700 capitalize text-white">
                     OUTREACH
                   </h1>
 
-                  <p class="text-gray-500 dark:text-gray-300">
+                  <p class="text-gray-500 dark:text-gray-300 text-white">
                     Outreach in Opeyemi Eye Clinic make a quiet impact in the
                     field of sight restoration and prevention of blindness in
                     the society.
@@ -243,7 +260,7 @@ const Homepage = () => {
                 </div>
 
                 <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -266,11 +283,11 @@ const Homepage = () => {
                     </svg>
                   </span>
 
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+                  <h1 class="text-2xl font-semibold text-gray-700 capitalize text-white">
                     EYECARE MEASURES
                   </h1>
 
-                  <p class="text-gray-500 dark:text-gray-300">
+                  <p class="text-gray-500 dark:text-gray-300 text-white">
                     Your eyes are an important part of your health. There are
                     many things you can do to keep them healthy and make sure
                     you are seeing your best.
@@ -278,7 +295,7 @@ const Homepage = () => {
                 </div>
 
                 <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -295,13 +312,11 @@ const Homepage = () => {
                     </svg>
                   </span>
 
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+                  <h1 class="text-2xl font-semibold text-gray-700 capitalize text-white">
                     OUR CLINIC
                   </h1>
 
-                  
-
-                  <p class="text-gray-500 dark:text-gray-300">
+                  <p class="text-gray-500 dark:text-gray-300 text-white">
                     Who we are and what we do
                     <br />
                     We help in fighting against preventable blindness in Nigeria
@@ -310,7 +325,7 @@ const Homepage = () => {
                 </div>
 
                 <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -327,23 +342,23 @@ const Homepage = () => {
                     </svg>
                   </span>
 
-                  <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+                  <h1 class="text-2xl font-semibold text-gray-700 capitalize text-white">
                     Working Hours
                   </h1>
-                  <li>Monday: 8am – 8pm</li>
-                  <li>Tuesday: 8am– 8pm</li>
-                  <li>Wednesday: 8am – 8pm</li>
-                  <li>Thursday: 8am – 8pm</li>
-                  <li>Friday: 8am – 8pm</li>
-                  <li>Saturday: 8am – 8pm</li>
-                  <li>Sun: Surgery</li>
+                  <li className="text-white">Monday: 8am – 8pm</li>
+                  <li className="text-white">Tuesday: 8am– 8pm</li>
+                  <li className="text-white">Wednesday: 8am – 8pm</li>
+                  <li className="text-white">Thursday: 8am – 8pm</li>
+                  <li className="text-white">Friday: 8am – 8pm</li>
+                  <li className="text-white">Saturday: 8am – 8pm</li>
+                  <li className="text-white">Sun: Surgery</li>
                 </div>
               </div>
 
               <div class="hidden lg:flex lg:w-1/2 lg:justify-center">
                 <img
                   class="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full"
-                  src={surgery}
+                  src={pic}
                   alt=""
                 />
               </div>

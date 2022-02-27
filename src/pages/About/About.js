@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Carousel from "../../components/Carousel";
 
 const About = () => {
   return (
@@ -57,7 +56,6 @@ const About = () => {
                   we continue updating and upgrading to ensure that you get the
                   best.
                 </p>
-                
 
                 <div class="flex items-center mt-6 -mx-2">
                   <a class="mx-2" href="#" aria-label="Twitter">
@@ -125,7 +123,7 @@ const About = () => {
               <p className="text-4xl font-bold leading-none lg:text-6xl">20</p>
               <p className="text-sm sm:text-base">Bedspaces</p>
             </div>
-            
+
             <div className="flex flex-col justify-start m-2 lg:m-6">
               <p className="text-4xl font-bold leading-none lg:text-6xl">4</p>
 
