@@ -8,13 +8,14 @@ const Carousel = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-
+  setTimeout(nextSlide, 2000);
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
+
   return (
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
