@@ -20,7 +20,7 @@ const Carousel = ({ slides }) => {
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      <div className="">
+      <div className="heading">
         <h1>OMEC HOSPITAL</h1>
       </div>
       {CarouselData.map((slide, index) => {

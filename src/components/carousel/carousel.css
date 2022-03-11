@@ -59,7 +59,12 @@
     height: 400px;
     border-radius: 10px;
   }
-  
+  .heading{
+    position: absolute;
+    font-size: 2rem;
+    z-index: 10;
+    user-select: none;
+  }
   .right-arrow {
     position: absolute;
     top: 50%;
