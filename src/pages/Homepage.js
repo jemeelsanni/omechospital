@@ -19,7 +19,7 @@ const Homepage = () => {
       <Navbar />
       {/* <Carousel /> */}
       {/* Welcome */}
-      {/* <div
+      <div
         className="hero w-full bg-center bg-cover h-[42rem]"
         style={{
           backgroundImage: "url(https://i.ibb.co/dk8sZNZ/home.jpg)",
@@ -37,14 +37,14 @@ const Homepage = () => {
             <button class="btn btn-primary">Book Appointment</button>
           </div>
         </div>
-      </div> */}
+      </div>
+      {/* <br />
       <br />
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <Carousel slides={CarouselData} />
+      <Carousel slides={CarouselData} /> */}
 
       <div>
         {/**Welcome Stops here */}
