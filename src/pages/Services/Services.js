@@ -106,7 +106,7 @@ const Services = () => {
                 <li>OCT</li>
                 <li>CVF</li>
                 <li>A- scan</li>
-                <li>Refractometer / keratometer</li>
+                <li>Refractometer / kertometer</li>
                 <li>Laser Machine</li>
                 <li>Pressure Check Machine</li>
               </div>
