@@ -49,21 +49,21 @@ const Homepage = () => {
       <div>
         {/**Welcome Stops here */}
         <br />
+        {/* {/* <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
         <br />
         <br />
         {/* 
         <Carousel slides={CarouselData} /> */}
-        <br />
+        {/* <br />
         <br />
         <br />
         <br />
 
         <br />
         <br />
-        <br />
+        <br /> */}
         {/**Services Starts here */}
         <section className="dark:bg-coolGray-800 dark:text-coolGray-100 bg-black">
           <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
