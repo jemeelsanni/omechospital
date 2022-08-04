@@ -66,27 +66,27 @@ const AddDoctor = () => {
   return (
     <div>
       <ToastContainer />
-      <div className="flex">
+      <div className="">
         <Sidebar />
-        <div className="w-full mt-10 pb-40 flex f items-center justify-center">
+        <div className="w-full mt-10 h-full flex  items-center justify-center">
           <div class=" w-full px-8">
             <div class="px-10">
               <div class="md:w-full t flex flex-col justify-center items-center ">
-                <div class="flex w-20 md:w-40 items-center">
-                  <h1 class="text-xl font-medium pr-2 leading-5 text-gray-800">
-                    Doctors Profile
+                <div class="flex w-40 md:w-40 items-center">
+                  <h1 class="lg:text-2xl font-medium pr-2 leading-5 text-gray-800">
+                    Add Doctors
                   </h1>
                 </div>
                 <p class="mt-4 text-sm leading-5 text-gray-600">
                   Information about the Doctor could go here .
                 </p>
               </div>
-              <div class="lg:flex justify-between flex-col  pb-[35rem]">
+              <div class="lg:flex justify-between flex-col  pb-10">
                 <div>
                   <div class="md:flex items-center  w-full justify-center lg:mt-0 mt-4">
                     <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
                       <label
-                        class="text-sm leading-none text-gray-800"
+                        class="text-sm leading-bg-bubble-gumnone text-gray-800"
                         id="fir5e6092fstName"
                       >
                         Name of Doctor
@@ -162,24 +162,26 @@ const AddDoctor = () => {
                         setImage(e.target.files[0]);
                       }}
                     />
-                    {!loading ? (
-                      <>
-                        {" "}
-                        <button
-                          onClick={addProfile}
-                          className="mr-20 bg-purple w-40 py-2 text-white font-bold hover:bg-midnight transition ease-in "
-                        >
-                          Add Profile
-                        </button>
-                      </>
-                    ) : (
-                      <>
-                        {" "}
-                        <button className="mr-20 bg-purple w-40 py-2 text-white font-bold hover:bg-midnight transition ease-in ">
-                          <ClipLoader size={20} color="white" />
-                        </button>
-                      </>
-                    )}
+                    <div className="">
+                      {!loading ? (
+                        <>
+                          {" "}
+                          <button
+                            onClick={addProfile}
+                            className="mr-20 bg-purple w-40 py-2 text-white font-bold hover:bg-midnight transition ease-in "
+                          >
+                            Add Profile
+                          </button>
+                        </>
+                      ) : (
+                        <>
+                          {" "}
+                          <button className="mr-20 bg-purple w-40 py-2 text-white font-bold hover:bg-midnight transition ease-in ">
+                            <ClipLoader size={20} color="white" />
+                          </button>
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

@@ -10,6 +10,7 @@ const Contact = () => {
   const [MessageBody, setMessageBody] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(false);
+  const FrmEmailId = "omechosp@gmail.com";
   const handleSubmit = async () => {
     setLoading(true);
     try {
@@ -22,13 +23,20 @@ const Contact = () => {
         })
         .then((response) => {
           setLoading(false);
+          console.log(response);
           if (response.status === 200) {
             setMessage(
               "Your Message has been sent, we will reach you as soon as possible"
             );
           }
         });
+      axios
+        .post("https://omechospital.com/api/EmailCon", { FrmEmailId })
+        .then((response) => {
+          console.log("2", response);
+        });
     } catch (error) {
+      console.log(error);
       setLoading(false);
       setMessage(error.response.data.title);
     }
@@ -256,9 +264,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-80 mt-40 mx-auto bg-purple container ">
+      {/* <div className="w-full h-80 mt-40 mx-auto bg-purple container ">
         <h1 className="text-2xl text-center font-bold">Reviews</h1>
-      </div>
+      </div> */}
       {/* <section className="py-6 dark:bg-coolGray-800 dark:text-coolGray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">

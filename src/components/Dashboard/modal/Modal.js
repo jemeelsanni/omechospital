@@ -1,12 +1,21 @@
 import { Dialog, Transition } from "@headlessui/react";
+import axios from "axios";
 import React, { useState, Fragment, useEffect } from "react";
+import { ClipLoader } from "react-spinners";
+import { toast, ToastContainer } from "react-toastify";
 import { useRecoilState } from "recoil";
 import { modalState, profileState } from "../../../atom/modalAtom";
-
+import "react-toastify/dist/ReactToastify.css";
 const Modal = () => {
   const [showModal, setShowModal] = useRecoilState(modalState);
   const [profile, setProfile] = useRecoilState(profileState);
-
+  const [DayName, setDayName] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [StartTime, setStartTime] = useState("");
+  const [EndTime, setEndTime] = useState("");
+  const DrId = profile.Id;
+  const Drp = profile;
+  const cn = "";
   function closeModal() {
     setShowModal(false);
   }
@@ -20,7 +29,28 @@ const Modal = () => {
     }
     fetchProfile();
   }, [profile]);
-
+  const addTime = async () => {
+    setLoading(true);
+    try {
+      const data = await axios
+        .post("https://omechospital.com/api/WeekDay", {
+          DayName,
+          StartTime,
+          EndTime,
+          DrId,
+          Drp,
+          cn,
+        })
+        .then((response) => {
+          console.log(response);
+          setLoading(false);
+        });
+    } catch (error) {
+      console.log(error);
+      toast.error(error.response);
+      setLoading(false);
+    }
+  };
   return (
     <div>
       {" "}
@@ -63,23 +93,57 @@ const Modal = () => {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
+                    Add the time of the doctor
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
+                    <div className="flex flex-col space-y-4  justify-between">
+                      <input
+                        type="text"
+                        name="DayName"
+                        onChange={(e) => setDayName(e.target.value)}
+                        placeholder="Day of the week"
+                        class=" rounded-lg py-2 px-2 w-full border-2 border-gray max-w-xs"
+                      />
+                      <input
+                        type="text"
+                        name="StartTime"
+                        placeholder="Start Time"
+                        onChange={(e) => setStartTime(e.target.value)}
+                        class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
+                      />
+                      <input
+                        type="text"
+                        name="EndTime"
+                        onChange={(e) => setEndTime(e.target.value)}
+                        placeholder="End Time"
+                        class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
+                      />
+                    </div>
                   </div>
 
                   <div className="mt-4">
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      Got it, thanks!
-                    </button>
+                    {loading ? (
+                      <>
+                        {" "}
+                        <button
+                          type="button"
+                          className="px-4 py-2 bg-purple text-white rounded-xl"
+                        >
+                          <ClipLoader size={20} color="white" />
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        {" "}
+                        <button
+                          type="button"
+                          className="px-4 py-2 bg-purple text-white rounded-xl"
+                          onClick={addTime}
+                        >
+                          Add
+                        </button>
+                      </>
+                    )}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
@@ -87,6 +151,7 @@ const Modal = () => {
           </div>
         </Dialog>
       </Transition>
+      <ToastContainer />
     </div>
   );
 };
