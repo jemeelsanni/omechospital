@@ -14,8 +14,8 @@ const Sidebar = () => {
   const showModal = useRecoilValue(modalState);
   return (
     <div>
-      <div className="md:w-[300px] flex flex-col items-center h-full bg-purple ">
-        <h1 className="text-3xl font-extrabold mt-10">Omec</h1>
+      <div className="md:w-[300px] hidden lg:flex flex-col items-center h-full bg-purple ">
+        <h1 className="text-3xl font-extrabold text-white mt-10">Omec</h1>
         <ul className="space-y-10 mt-10 flex flex-col items-center">
           <li className="text-white hover:bg-gray group px-10 py-2 rounded-xl font-bold text-xl">
             <a className="group-hover:text-black" href="/add">

@@ -30,7 +30,7 @@ const DoctorProfile = () => {
           <div className=" container mx-auto max-w-7xl h-full">
             <h1 className="text-3xl font-bold mt-6 ">Doctor's Profiles</h1>
             <div class="container px-6 py-10 mx-auto">
-              <div class="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+              <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
                 {profiles.map((profile) => {
                   return (
                     <>
@@ -44,7 +44,7 @@ const DoctorProfile = () => {
                           alt=""
                         />
 
-                        <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+                        <h1 class="mt-4 md:text-lg 2xl:text-2xl text-xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
                           {profile.DRName}
                         </h1>
 

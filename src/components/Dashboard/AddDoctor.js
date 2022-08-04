@@ -68,22 +68,22 @@ const AddDoctor = () => {
       <ToastContainer />
       <div className="flex">
         <Sidebar />
-        <div className="w-full mt-10 pb-40 flex items-center justify-center">
+        <div className="w-full mt-10 pb-40 flex f items-center justify-center">
           <div class=" w-full px-8">
             <div class="px-10">
-              <div class="lg:flex justify-between border-b  border-black pb-16">
-                <div class="md:w-80">
-                  <div class="flex w-20 md:w-40 items-center">
-                    <h1 class="text-xl font-medium pr-2 leading-5 text-gray-800">
-                      Doctors Profile
-                    </h1>
-                  </div>
-                  <p class="mt-4 text-sm leading-5 text-gray-600">
-                    Information about the Doctor could go here .
-                  </p>
+              <div class="md:w-full t flex flex-col justify-center items-center ">
+                <div class="flex w-20 md:w-40 items-center">
+                  <h1 class="text-xl font-medium pr-2 leading-5 text-gray-800">
+                    Doctors Profile
+                  </h1>
                 </div>
+                <p class="mt-4 text-sm leading-5 text-gray-600">
+                  Information about the Doctor could go here .
+                </p>
+              </div>
+              <div class="lg:flex justify-between flex-col  pb-[35rem]">
                 <div>
-                  <div class="md:flex items-center lg:ml-24 lg:mt-0 mt-4">
+                  <div class="md:flex items-center  w-full justify-center lg:mt-0 mt-4">
                     <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
                       <label
                         class="text-sm leading-none text-gray-800"
@@ -136,7 +136,7 @@ const AddDoctor = () => {
                       />
                     </div>
                   </div>
-                  <div class="md:flex space-y-10 justify-between  items-center lg:ml-24 mt-8">
+                  <div class="md:flex space-y-10 justify-between xl:justify-center xl:w-full   items-center  mt-8">
                     <div class="md:w-[20rem] md:ml-12  mt-4 ">
                       <label
                         class="text-sm leading-none w-40 text-gray-800"
@@ -180,85 +180,6 @@ const AddDoctor = () => {
                         </button>
                       </>
                     )}
-                  </div>
-                </div>
-              </div>
-              <div class="mt-16 bg-gray lg:flex justify-between border-b border-gray-200 pb-16 mb-4">
-                <div class="md:w-80">
-                  <div class="flex items-center">
-                    <h1 class="text-xl font-medium pr-2 leading-5 text-gray-800">
-                      Appointment time
-                    </h1>
-                  </div>
-                  <p class="mt-4 text-sm leading-5 text-gray-600">
-                    Information about the the time and day in which the doctor
-                    will be availble could go here
-                  </p>
-                </div>
-                <div>
-                  <div class="md:flex items-center lg:ml-24 lg:mt-0 mt-4">
-                    <div class="md:w-64">
-                      <label
-                        class="text-sm leading-none text-gray-800"
-                        id="password"
-                      >
-                        Password
-                      </label>
-                      <input
-                        type="name"
-                        tabindex="0"
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
-                        aria-labelledby="password"
-                        placeholder="Enter your password"
-                      />
-                    </div>
-                    <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
-                      <label
-                        class="text-sm leading-none text-gray-800"
-                        id="securityCode"
-                      >
-                        Security Code
-                      </label>
-                      <input
-                        type="name"
-                        tabindex="0"
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
-                        aria-labelledby="securityCode"
-                        placeholder="Enter your security code"
-                      />
-                    </div>
-                  </div>
-                  <div class="md:flex items-center lg:ml-24 mt-8">
-                    <div class="md:w-64">
-                      <label
-                        class="text-sm leading-none text-gray-800"
-                        id="recoverEmail"
-                      >
-                        Recovery Email address
-                      </label>
-                      <input
-                        type="name"
-                        tabindex="0"
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
-                        aria-labelledby="recoveryEmail"
-                        placeholder="Your recovery email"
-                      />
-                    </div>
-                    <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
-                      <label
-                        class="text-sm leading-none text-gray-800"
-                        id="altPhone"
-                      >
-                        Alternate phone number
-                      </label>
-                      <input
-                        type="name"
-                        tabindex="0"
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
-                        aria-labelledby="altPhone"
-                        placeholder="Your alternate phone number"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
