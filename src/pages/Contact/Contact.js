@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
 import { sendContact } from "../../config/api";
-import { MoonLoader } from "react-spinners";
+import { ClipLoader, MoonLoader } from "react-spinners";
 const Contact = () => {
   const [PhoneNumber, setPhoneNumber] = useState("");
   const [Name, setName] = useState("");
@@ -131,11 +131,6 @@ const Contact = () => {
                 <br />
                 Nigeria.
               </p>
-              <a href="javascript:void(0)">
-                <p className="text-white pt-16 font-bold tracking-wide underline">
-                  View Job Openings
-                </p>
-              </a>
             </div>
           </div>
           <div className="xl:w-3/5 lg:w-3/5 bg-gray h-full pt-5 pb-5 xl:pr-5 xl:pl-0 rounded-tr rounded-br">
@@ -235,9 +230,9 @@ const Contact = () => {
                       <div
                         type="submit"
                         disabled
-                        className=" bg-purple rounded w-24 py-2 text-white px-8 "
+                        className=" bg-purple rounded flex justify-center items-center w-24 py-2 text-white px-8 "
                       >
-                        <MoonLoader size={20} />
+                        <ClipLoader size={20} color="white" />
                       </div>
                     </>
                   ) : (
@@ -246,7 +241,7 @@ const Contact = () => {
                       <button
                         type="submit"
                         onClick={handleSubmit}
-                        className="focus:outline-none bg-purple transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-2 text-sm leading-6"
+                        className="focus:outline-none bg-purple transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white font-bold px-8 py-2 text-sm leading-6"
                       >
                         Submit
                       </button>
@@ -260,6 +255,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full h-80 mt-40 mx-auto bg-purple container ">
+        <h1 className="text-2xl text-center font-bold">Reviews</h1>
       </div>
       {/* <section className="py-6 dark:bg-coolGray-800 dark:text-coolGray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">

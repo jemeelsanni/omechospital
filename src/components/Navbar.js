@@ -9,6 +9,7 @@ const Navbar = () => {
     { name: "About us", href: "/about", current: false },
     { name: "Contact", href: "contact", current: false },
     { name: "Blog", href: "blog", current: false },
+    { name: "Doctors", href: "/doctors", current: false },
   ];
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");

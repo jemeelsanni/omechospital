@@ -11,8 +11,14 @@ import Services from "./pages/Services/Services";
 import NotFound from "./pages/NotFound/NotFound";
 import Carousel from "./components/carousel/Carousel";
 import { CarouselData } from "./components/carousel/CarouselData";
+import DoctorsProfile from "./pages/Doctor/DoctorsProfile";
+import AddDoctor from "./components/Dashboard/AddDoctor";
+import DoctorProfile from "./components/Dashboard/DoctorProfile";
+import { useRecoilValue } from "recoil";
+import { modalState } from "./atom/modalAtom";
 
 function App() {
+  const showModal = useRecoilValue(modalState);
   return (
     // <Homepage />
     <>
@@ -24,7 +30,12 @@ function App() {
           <Route path="appointment" element={<Appointment />} />
           <Route path="contact" element={<Contact />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="doctors" element={<DoctorsProfile />} />
           <Route path="*" element={<NotFound />} />
+
+          {/* sidebar routes */}
+          <Route path="add" element={<AddDoctor />} />
+          <Route path="profiles" element={<DoctorProfile />} />
         </Routes>
       </Router>
     </>
