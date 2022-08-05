@@ -5,14 +5,14 @@ import { ClipLoader } from "react-spinners";
 import { toast, ToastContainer } from "react-toastify";
 import { useRecoilState } from "recoil";
 import { modalState, profileState } from "../../../atom/modalAtom";
-import "react-toastify/dist/ReactToastify.css";
+// import "react-toastify/dist/ReactToastify.css";
 const Modal = () => {
   const [showModal, setShowModal] = useRecoilState(modalState);
   const [profile, setProfile] = useRecoilState(profileState);
   const [DayName, setDayName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [StartTime, setStartTime] = useState("");
-  const [EndTime, setEndTime] = useState("");
+  const [StartTime, setStartTime] = useState(null);
+  const [EndTime, setEndTime] = useState(null);
   const DrId = profile.Id;
   const Drp = profile;
   const cn = "";
@@ -47,22 +47,14 @@ const Modal = () => {
         });
     } catch (error) {
       console.log(error);
-      toast.error(error.response);
+      toast.error("boooooo");
       setLoading(false);
     }
   };
   return (
     <div>
       {" "}
-      {/* <div className="fixed inset-0 flex items-center justify-center">
-        <button
-          type="button"
-          onClick={openModal}
-          className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-        >
-          Open dialog
-        </button>
-      </div> */}
+      <ToastContainer />
       <Transition appear show={showModal} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
@@ -105,14 +97,14 @@ const Modal = () => {
                         class=" rounded-lg py-2 px-2 w-full border-2 border-gray max-w-xs"
                       />
                       <input
-                        type="text"
+                        type="time"
                         name="StartTime"
                         placeholder="Start Time"
                         onChange={(e) => setStartTime(e.target.value)}
                         class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
                       />
                       <input
-                        type="text"
+                        type="time"
                         name="EndTime"
                         onChange={(e) => setEndTime(e.target.value)}
                         placeholder="End Time"
