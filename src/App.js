@@ -11,6 +11,7 @@ import Services from "./pages/Services/Services";
 import NotFound from "./pages/NotFound/NotFound";
 import Carousel from "./components/carousel/Carousel";
 import { CarouselData } from "./components/carousel/CarouselData";
+import Doctor from "./pages/Doctors/Doctors";
 import DoctorsProfile from "./pages/Doctor/DoctorsProfile";
 import AddDoctor from "./components/Dashboard/AddDoctor";
 import DoctorProfile from "./components/Dashboard/DoctorProfile";
@@ -27,10 +28,12 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
-          <Route path="appointment" element={<Appointment />} />
+          {/* <Route path="appointment" element={<Appointment />} /> */}
           <Route path="contact" element={<Contact />} />
           <Route path="blog" element={<Blog />} />
           <Route path="doctors" element={<DoctorsProfile />} />
+          <Route path="appointment" element={<Doctor />} />
+          <Route path="submit" element={<Appointment />} />
           <Route path="*" element={<NotFound />} />
 
           {/* sidebar routes */}
