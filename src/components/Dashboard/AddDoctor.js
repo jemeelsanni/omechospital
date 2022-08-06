@@ -69,9 +69,9 @@ const AddDoctor = () => {
       <div className="">
         <Sidebar />
         <div className="w-full mt-10 h-full flex  items-center justify-center">
-          <div class=" w-full px-8">
+          <div class=" w-full bg-white">
             <div class="px-10">
-              <div class="md:w-full t flex flex-col justify-center items-center ">
+              <div class="md:w-full  flex flex-col justify-center items-center ">
                 <div class="flex w-40 md:w-40 items-center">
                   <h1 class="lg:text-2xl font-medium pr-2 leading-5 text-gray-800">
                     Add Doctors

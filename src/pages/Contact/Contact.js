@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import axios from "axios";
 import { sendContact } from "../../config/api";
 import { ClipLoader, MoonLoader } from "react-spinners";
+import { toast, ToastContainer } from "react-toastify";
 const Contact = () => {
   const [PhoneNumber, setPhoneNumber] = useState("");
   const [Name, setName] = useState("");
@@ -25,20 +26,18 @@ const Contact = () => {
           setLoading(false);
           console.log(response);
           if (response.status === 200) {
-            setMessage(
+            toast.success(
               "Your Message has been sent, we will reach you as soon as possible"
             );
           }
         });
       axios
         .post("https://omechospital.com/api/EmailCon", { FrmEmailId })
-        .then((response) => {
-          console.log("2", response);
-        });
+        .then((response) => {});
     } catch (error) {
       console.log(error);
       setLoading(false);
-      setMessage(error.response.data.title);
+      toast.error(error.response.data.title);
     }
   };
   return (
@@ -61,6 +60,7 @@ const Contact = () => {
         </div>
       </div> */}
       <Navbar />
+      <ToastContainer />
       <div
         className="w-full bg-center bg-cover h-[32rem]"
         style={{

@@ -15,7 +15,7 @@ const Modal = () => {
   const [EndTime, setEndTime] = useState(null);
   const DrId = profile.Id;
   const Drp = profile;
-  const cn = "";
+  const cn = [];
   function closeModal() {
     setShowModal(false);
   }
@@ -33,16 +33,15 @@ const Modal = () => {
     setLoading(true);
     try {
       const data = await axios
-        .post("https://omechospital.com/api/WeekDay", {
+        .post("https://omechospital.com/api/DrPeriod", {
           DayName,
           StartTime,
           EndTime,
-          DrId,
-          Drp,
-          cn,
+          Id: DrId,
         })
         .then((response) => {
           console.log(response);
+          toast.success("Added Successfully");
           setLoading(false);
         });
     } catch (error) {

@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "About us", href: "/about", current: false },
     { name: "Contact", href: "contact", current: false },
     { name: "Blog", href: "blog", current: false },
-    { name: "Doctors", href: "/doctors", current: false },
+    // { name: "Doctors", href: "/doctors", current: false },
   ];
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -56,7 +56,7 @@ const Navbar = () => {
                             item.current
                               ? "bg-gray-900 text-red"
                               : "text-gray-300 hover:bg-gray-700 hover:text-blue",
-                            "px-3 py-2 rounded-md text-sm font-medium"
+                            "px-3 py-2 rounded-md text-lg font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
