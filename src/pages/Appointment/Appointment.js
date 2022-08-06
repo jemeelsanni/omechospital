@@ -22,11 +22,12 @@ const Appointment = () => {
     const search = location.search;
     const id = new URLSearchParams(search).get("id");
     const dname = new URLSearchParams(search).get("name");
+    const image = new URLSearchParams(search).get("image");
   
     useEffect(() => {
     const get = async () => {
       const {data} = await axios.get(
-        `https://omechospital.com/api/WeekDay/${id}`
+        `https://omechospital.com/api/DrPeriod/${id}`
       );
       setData(data);
         console.log(data)
@@ -74,12 +75,25 @@ const Appointment = () => {
       <h1 className="text-2xl mx-20 font-semibold mt-12 lg:text-3xl">
               Fill and submit
             </h1>
-      <div className="p-6 sm:p-12 dark:bg-gray-900 dark:text-gray-100 rounded-lg shadow-md mx-20 my-6">
+      <div className="p-6 sm:p-12 dark:bg-gray-900 dark:text-gray-100 rounded-lg shadow-md lg:mx-20 mx-1 my-6">
 	<div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
-		<img src="https://source.unsplash.com/75x75/?portrait" alt="" className="self-center flex-shrink-0 w-40 h-40 border  md:justify-self-start dark:bg-gray-500 dark:border-gray-700" />
-		<div className="flex flex-col justify-center">
-			<h4 className="text-lg font-semibold  md:text-left">Leroy Jenkins</h4>
-			<p className="dark:text-gray-400">Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.</p>
+		<img src={image} alt="" className="self-center flex-shrink-0 w-40 h-40 border  md:justify-self-start dark:bg-gray-500 dark:border-gray-700" />
+		<div className="flex flex-col">
+			{/* <h4 className="text-lg font-semibold  md:text-left">{dname}</h4> */}
+      
+      <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
+      {
+          data.map((d)=>(
+           <div className=" mt-2 my-auto">
+                <p className="p-2 font-meduim text-xl text-center">{d.DayName}</p>
+                <div className="space-y-4">
+                <p className=" bg-gray p-2 text-center rounded-md">Start Date <span>{d.StartTime}</span></p>
+                <p className=" bg-gray p-2 text-center rounded-md">End Date <span>{d.EndTime}</span></p>
+                </div>
+           </div>
+           ))
+           }
+      </div>
 		</div>
 	</div>
 </div>

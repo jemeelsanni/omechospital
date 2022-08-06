@@ -37,7 +37,7 @@ const Doctor = () => {
           {data &&
             data.map((d) => (
               <a
-                href={`/submit?id=${d.Id}&name=${d.DRName}`}
+                href={`/submit?id=${d.Id}&name=${d.DRName}&image=${d.ImagePath}`}
                 key={d}
                 //   onClick={() => router.push(`/class/${d._id}`)}
                 className="max-w-sm overflow-hidden cursor-pointer hover:shadow-2xl  rounded-lg shadow-md  bg-gray-800"
