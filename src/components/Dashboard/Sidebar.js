@@ -55,7 +55,7 @@ const Sidebar = () => {
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex ">
                     <a href="/" className="font-bold text-3xl">
-                      Omec
+                      Omec Dashboard
                     </a>
                     {/* <img
                       className="block lg:hidden h-8 w-auto"
