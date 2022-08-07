@@ -83,7 +83,7 @@ const Appointment = () => {
       
       <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
       {
-          data.map((d)=>(
+          data[0] && data.map((d)=>(
            <div className=" mt-2 my-auto">
                 <p className="p-2 font-meduim text-xl text-center">{d.DayName}</p>
                 <div className="space-y-4">
