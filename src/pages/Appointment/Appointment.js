@@ -11,7 +11,10 @@ const Appointment = () => {
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [hn, setHn] = useState("");
-  const [period, setPeriod] = useState({});
+  const [period, setPeriod] = useState({
+    StartTime: "00:00",
+    DayName: "Select Day",
+  });
   const [date, setDate] = useState(null);
   const [time, setTime] = useState(null);
   const [show, setShow] = useState(false);
