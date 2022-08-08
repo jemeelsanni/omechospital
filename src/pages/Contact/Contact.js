@@ -24,7 +24,7 @@ const Contact = () => {
         })
         .then((response) => {
           setLoading(false);
-          console.log(response);
+          //conosle.log(response);
           if (response.status === 200) {
             toast.success(
               "Your Message has been sent, we will reach you as soon as possible"
@@ -35,7 +35,7 @@ const Contact = () => {
         .post("https://omechospital.com/api/EmailCon", { FrmEmailId })
         .then((response) => {});
     } catch (error) {
-      console.log(error);
+      //conosle.log(error);
       setLoading(false);
       toast.error(error.response.data.title);
     }

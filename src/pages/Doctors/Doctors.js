@@ -9,11 +9,11 @@ const Doctor = () => {
   useEffect(() => {
     setLoading(true);
     const get = async () => {
-      const {data} = await axios.get(
+      const { data } = await axios.get(
         "https://omechospital.com/api/Doctorprofile"
       );
       setData(data);
-        console.log(data)
+      //conosle.log(data)
       setLoading(false);
     };
     get();
@@ -50,20 +50,19 @@ const Doctor = () => {
 
                 <div className="p-6">
                   <div>
-                      <div className="flex items-center">
-                        <a
-                          href="#"
-                          className="mx-2 font-semibold text-gray-700  text-gray-200"
-                        >
-                          {d.DRName}
-                        </a>
-                      </div>
+                    <div className="flex items-center">
+                      <a
+                        href="#"
+                        className="mx-2 font-semibold text-gray-700  text-gray-200"
+                      >
+                        {d.DRName}
+                      </a>
+                    </div>
                     <a className="block  text-2xl font-semibold  transition-colors duration-200 transform  text-white ">
-                    {d.Email}
+                      {d.Email}
                     </a>
                     <p className=" text-sm mx-2 text-gray-400">{d.AboutDr}</p>
                   </div>
-
                 </div>
               </a>
             ))}

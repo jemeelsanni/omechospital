@@ -30,11 +30,11 @@ const Appointment = () => {
       );
       setData(data);
 
-      if(data[0]){
-        console.log(data[0])
-        setPeriod(data[0])
+      if (data[0]) {
+        //conosle.log(data[0])
+        setPeriod(data[0]);
       }
-      console.log(data);
+      //conosle.log(data);
     };
     get();
   }, [setData]);
@@ -56,21 +56,20 @@ const Appointment = () => {
         }
       );
       setData(response);
-      console.log(response);
+      //conosle.log(response);
       setLoading(false);
       toast.success("Appointment added");
     } catch (error) {
       toast.error("Something went wrong");
       setLoading(false);
-      console.log(error);
+      //conosle.log(error);
     }
   };
 
-  const changeHandler = (e) =>{
-
-      const per = data.find(d=> d.DayName == e)
-      setPeriod(per)
-  }
+  const changeHandler = (e) => {
+    const per = data.find((d) => d.DayName == e);
+    setPeriod(per);
+  };
 
   return (
     <div>
@@ -98,25 +97,23 @@ const Appointment = () => {
               <p>{period.StartTime}</p>
             </div>
             <div className="container grid  grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
-            
-            <select
-                  required
-                  className="block  w-full px-4 mb-4 pt-2 mt-2 text-gray-700 bg-white border rounded-md :bg-gray-800 :text-gray-300 :border-gray-600 focus:border-blue-400 :focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                  value={period.DayName}
-                  onChange={(e) => {
-                    changeHandler(e.target.value);
-                    console.log(e.target.value);
-                  }}
-                  style={{ paddingRight: "300px", paddingBottom: "5px" }}
-                >
-                  {data.map((b) => (
-                    <option key={b.ID} 
-                    className="bg-white">
-                      {b.DayName}
-                    </option>
-                  ))}
-                </select>
-            
+              <select
+                required
+                className="block  w-full px-4 mb-4 pt-2 mt-2 text-gray-700 bg-white border rounded-md :bg-gray-800 :text-gray-300 :border-gray-600 focus:border-blue-400 :focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                value={period.DayName}
+                onChange={(e) => {
+                  changeHandler(e.target.value);
+                  //conosle.log(e.target.value);
+                }}
+                style={{ paddingRight: "300px", paddingBottom: "5px" }}
+              >
+                {data.map((b) => (
+                  <option key={b.ID} className="bg-white">
+                    {b.DayName}
+                  </option>
+                ))}
+              </select>
+
               {/* <div
                 onClick={() => setShow(!show)}
                 className="flex mt-4 bg-gray cursor-pointer p-2 rounded-md space-x-3"
@@ -148,7 +145,7 @@ const Appointment = () => {
                         }}
                         className="block px-4 py-3 text-sm text-gray-600  transition-colors duration-200 transform  :text-gray-300 hover:bg-gray-100  :hover:bg-gray-700  :hover:text-white"
                       >
-                      {console.log(d)}
+                      {//conosle.log(d)}
                         {" "}
                         {d.DayName}{" "}
                       </a>

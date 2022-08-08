@@ -48,7 +48,7 @@ const AddDoctor = () => {
           ImagePath,
         })
         .then((response) => {
-          console.log(response);
+          //conosle.log(response);
           setLoading(false);
           if (response.status === 200) {
             toast.success("Added successfully");

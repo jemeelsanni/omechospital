@@ -20,12 +20,12 @@ const Modal = () => {
     setShowModal(false);
   }
   function doNothing() {
-    console.log("dp nothing");
+    //conosle.log("dp nothing");
   }
   useEffect(() => {
     if (!profile) return;
     async function fetchProfile() {
-      console.log(profile);
+      //conosle.log(profile);
     }
     fetchProfile();
   }, [profile]);
@@ -36,16 +36,16 @@ const Modal = () => {
         .post("https://omechospital.com/api/DrPeriod", {
           DayName,
           StartTime,
-          EndTime,
+          // EndTime,
           Id: DrId,
         })
         .then((response) => {
-          console.log(response);
+          //conosle.log(response);
           toast.success("Added Successfully");
           setLoading(false);
         });
     } catch (error) {
-      console.log(error);
+      //conosle.log(error);
       toast.error("boooooo");
       setLoading(false);
     }
@@ -102,13 +102,13 @@ const Modal = () => {
                         onChange={(e) => setStartTime(e.target.value)}
                         class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
                       />
-                      <input
+                      {/* <input
                         type="time"
                         name="EndTime"
                         onChange={(e) => setEndTime(e.target.value)}
                         placeholder="End Time"
                         class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
-                      />
+                      /> */}
                     </div>
                   </div>
 
