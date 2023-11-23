@@ -15,7 +15,7 @@ const Navbar = () => {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <div>
+    <div className="">
       <Disclosure as="nav" className="bg-gray-800">
         {({ open }) => (
           <>
@@ -34,7 +34,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex ">
-                    <h1 className="font-bold text-3xl">Omec</h1>
+                    <a href="/">
+                      <h1 className="font-bold text-3xl">OMEC</h1>
+                    </a>
                     {/* <img
                       className="block lg:hidden h-8 w-auto"
                       src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"

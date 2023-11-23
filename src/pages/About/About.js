@@ -9,7 +9,7 @@ const About = () => {
       {/* header section */}
 
       <div
-        className="w-full bg-center bg-cover h-[32rem]"
+        className="w-full bg-center bg-cover h-[12rem]"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/4KnKgf8/kaleb-tapp-J59w-WPn09-BE-unsplash.jpg)",
@@ -27,12 +27,12 @@ const About = () => {
       <section>
         <section class="bg-white dark:bg-gray-800">
           <div class="container px-6 py-8 mx-auto">
-            <div class="items-center lg:flex">
-              <div class="lg:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">
+            <div class="items-center ">
+              <div class="">
+                <h2 class="text-3xl text-center font-bold text-gray-800 dark:text-gray-100">
                   Opeyemi Mega Eye Center
                 </h2>
-                <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+                <p class="mt-4 text-center text-gray-500 dark:text-gray-400 ">
                   Opeyemi Mega Eye Centre is a world class health facility
                   dedicated to providing all your Eye health needs, not only
                   curative but also preventives. We boast of cutting edge
@@ -57,7 +57,7 @@ const About = () => {
                   best.
                 </p>
 
-                <div class="flex items-center mt-6 -mx-2">
+                <div class="flex justify-center items-center mt-6 -mx-2">
                   <a class="mx-2" href="#" aria-label="Twitter">
                     <svg
                       class="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
@@ -99,18 +99,6 @@ const About = () => {
                   </a>
                 </div>
               </div>
-
-              <div class="mt-8 lg:mt-0 lg:w-1/2">
-                <div class="flex items-center justify-center lg:justify-end">
-                  <div class="max-w-lg">
-                    <img
-                      class="object-cover object-center w-full h-64 rounded-md shadow"
-                      src="https://image.freepik.com/free-photo/male-young-doctor-with-stethoscope-face-mask-isolated-white_155003-7109.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -136,65 +124,6 @@ const About = () => {
           </div>
         </section>
       </section>
-      {/* doctors */}
-      <h2 class="text-4xl text-center py-5 font-bold text-gray-800 dark:text-gray-100">
-        Our Doctors
-      </h2>
-      <div class="items-center space-y-5 lg:flex">
-        <div className="max-w-xs rounded-md mx-auto shadow-md dark:bg-coolGray-900 dark:text-coolGray-100">
-          <img
-            src="https://source.unsplash.com/random/300x300/?2"
-            alt=""
-            className="object-cover object-center w-full rounded-t-md h-72 dark:bg-coolGray-500"
-          />
-          <div className="flex flex-col justify-between p-6 space-y-8">
-            <div className="space-y-2">
-              <h2 className="text-3xl text-center font-semibold tracking-wide">
-                Optician
-              </h2>
-              <p className="dark:text-coolGray-100 text-center font-medium">
-                John Doe
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-xs rounded-md mx-auto shadow-md dark:bg-coolGray-900 dark:text-coolGray-100">
-          <img
-            src="https://source.unsplash.com/random/300x300/?2"
-            alt=""
-            className="object-cover object-center w-full rounded-t-md h-72 dark:bg-coolGray-500"
-          />
-          <div className="flex flex-col justify-between p-6 space-y-8">
-            <div className="space-y-2">
-              <h2 className="text-3xl text-center font-semibold tracking-wide">
-                Optician
-              </h2>
-              <p className="dark:text-coolGray-100 text-center font-medium">
-                John Doe
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-xs rounded-md mx-auto shadow-md dark:bg-coolGray-900 dark:text-coolGray-100">
-          <img
-            src="https://source.unsplash.com/random/300x300/?2"
-            alt=""
-            className="object-cover object-center w-full rounded-t-md h-72 dark:bg-coolGray-500"
-          />
-          <div className="flex flex-col justify-between p-6 space-y-8">
-            <div className="space-y-2">
-              <h2 className="text-3xl text-center font-semibold tracking-wide">
-                Optician
-              </h2>
-              <p className="dark:text-coolGray-100 text-center font-medium">
-                John Doe
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* testimonials */}
 

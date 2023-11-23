@@ -8,7 +8,7 @@ const Services = () => {
       <Navbar />
       {/* header section */}
       <div
-        className="w-full bg-center bg-cover h-[32rem]"
+        className="w-full bg-center bg-cover h-[12rem]"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/DYWWBXH/national-cancer-institute-L8t-WZT4-Cc-VQ-unsplash.jpg)",

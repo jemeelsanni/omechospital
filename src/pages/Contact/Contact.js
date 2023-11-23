@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
 import { sendContact } from "../../config/api";
@@ -62,7 +63,7 @@ const Contact = () => {
       <Navbar />
       <ToastContainer />
       <div
-        className="w-full bg-center bg-cover h-[32rem]"
+        className="w-full bg-center bg-cover h-[12rem]"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/pzLn3ht/pawel-czerwinski-0x-CCPIbl3-M-unsplash.jpg)",
@@ -78,7 +79,7 @@ const Contact = () => {
       </div>
       <div className="container mx-auto pt-16">
         <div className="lg:flex">
-          <div className="xl:w-2/5 lg:w-2/5 bg-purple py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
+          <div className="xl:w-2/5 lg:w-2/5 bg-black py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
             <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
               <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
                 Get in touch
@@ -238,7 +239,7 @@ const Contact = () => {
                       <div
                         type="submit"
                         disabled
-                        className=" bg-purple rounded flex justify-center items-center w-24 py-2 text-white px-8 "
+                        className=" bg-black rounded flex justify-center items-center w-24 py-2 text-white px-8 "
                       >
                         <ClipLoader size={20} color="white" />
                       </div>
@@ -249,7 +250,7 @@ const Contact = () => {
                       <button
                         type="submit"
                         onClick={handleSubmit}
-                        className="focus:outline-none bg-purple transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white font-bold px-8 py-2 text-sm leading-6"
+                        className="focus:outline-none bg-black transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white font-bold px-8 py-2 text-sm leading-6"
                       >
                         Submit
                       </button>
@@ -264,103 +265,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {/* <div className="w-full h-80 mt-40 mx-auto bg-purple container ">
-        <h1 className="text-2xl text-center font-bold">Reviews</h1>
-      </div> */}
-      {/* <section className="py-6 dark:bg-coolGray-800 dark:text-coolGray-50">
-        <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-          <div className="py-6 md:py-0 md:px-6">
-            <h1 className="text-4xl font-bold">Get in touch</h1>
-            <p className="pt-2 pb-4">
-              Fill in the form to start a conversation
-            </p>
-            <div className="space-y-4">
-              <p className="flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2 sm:mr-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span>
-                  No 4B, Sabo Line Isale<br/>
-                   Opposite Temitope Hospital
-                  <br />
-                  Amilegbe
-                  <br />
-                  Ilorin, Kwara State
-                  <br />
-                  Nigeria.
-                </span>
-              
-              </p>
-              <p className="flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2 sm:mr-6"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                </svg>
-                <span>+234 81 464 166 76</span>
-              </p>
-              <p className="flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2 sm:mr-6"
-                >
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                </svg>
-                <span>omechosp@gmail.com</span>
-              </p>
-            </div>
-          </div>
-          <form
-            novalidate=""
-            className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
-          >
-            <label className="block">
-              <span className="mb-1">Full name</span>
-              <input
-                type="text"
-                placeholder="Leroy Jenkins"
-                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-rose-400 dark:bg-coolGray-800"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-1">Email address</span>
-              <input
-                type="email"
-                placeholder="leroy@jenkins.com"
-                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-rose-400 dark:bg-coolGray-800"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-1">Message</span>
-              <textarea
-                rows="3"
-                className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-rose-400 dark:bg-coolGray-800"
-              ></textarea>
-            </label>
-            <button
-              type="button"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-rose-400 dark:text-coolGray-900 focus:ring-rose-400 hover:ring-rose-400"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
-      </section> */}
+      <Footer />
     </div>
   );
 };
