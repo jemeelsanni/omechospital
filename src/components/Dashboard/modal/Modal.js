@@ -93,48 +93,37 @@ const Modal = () => {
                         name="DayName"
                         onChange={(e) => setDayName(e.target.value)}
                         placeholder="Day of the week"
-                        class=" rounded-lg py-2 px-2 w-full border-2 border-gray max-w-xs"
+                        className="rounded-lg py-2 px-2 w-full border-2 border-gray-300 max-w-xs focus:outline-none focus:border-purple"
                       />
                       <input
                         type="time"
                         name="StartTime"
                         placeholder="Start Time"
                         onChange={(e) => setStartTime(e.target.value)}
-                        class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
+                        className="rounded-lg py-2 w-full px-2 border-2 border-gray-300 max-w-xs focus:outline-none focus:border-purple"
                       />
                       {/* <input
                         type="time"
                         name="EndTime"
                         onChange={(e) => setEndTime(e.target.value)}
                         placeholder="End Time"
-                        class=" rounded-lg py-2 w-full px-2 border-2 border-gray max-w-xs"
+                        className="rounded-lg py-2 w-full px-2 border-2 border-gray-300 max-w-xs focus:outline-none focus:border-purple"
                       /> */}
                     </div>
                   </div>
 
                   <div className="mt-4">
-                    {loading ? (
-                      <>
-                        {" "}
-                        <button
-                          type="button"
-                          className="px-4 py-2 bg-purple text-white rounded-xl"
-                        >
-                          <ClipLoader size={20} color="white" />
-                        </button>
-                      </>
-                    ) : (
-                      <>
-                        {" "}
-                        <button
-                          type="button"
-                          className="px-4 py-2 bg-purple text-white rounded-xl"
-                          onClick={addTime}
-                        >
-                          Add
-                        </button>
-                      </>
-                    )}
+                    <button
+                      type="button"
+                      disabled={loading}
+                      className="px-6 py-2 text-white transition-colors duration-200 transform bg-purple rounded-md hover:bg-midnight focus:outline-none focus:bg-midnight disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                      onClick={addTime}
+                    >
+                      {loading && (
+                        <ClipLoader size={20} color="white" />
+                      )}
+                      {loading ? "Adding..." : "Add"}
+                    </button>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

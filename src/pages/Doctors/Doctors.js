@@ -23,7 +23,7 @@ const Doctor = () => {
     <>
       <Navbar />
       <div style={{ minHeight: "90vh" }} className="bg-gray-900 px-5">
-        <h1 className="text-2xl font-semibold mt-12 lg:text-3xl">
+        <h1 className="text-2xl font-semibold mt-12 lg:text-5xl">
           Choose a doctor
         </h1>{" "}
         {loading && (

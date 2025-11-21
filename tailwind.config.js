@@ -10,13 +10,16 @@ module.exports = {
       white: "#ffffff",
       purple: "#3f3cbb",
       midnight: "#121063",
-      gray: "		#E8E8E8",
+      gray: colors.gray, // Using Tailwind's full gray scale
       metal: "#565584",
       tahiti: "#3ab7bf",
       silver: "#ecebff",
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
       black: colors.black,
+      blue: colors.blue, // Adding blue for consistent color usage
+      indigo: colors.indigo, // Adding indigo for existing references
+      red: colors.red, // Adding red for toast/error states
     },
     extend: {},
   },

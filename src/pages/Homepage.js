@@ -29,22 +29,24 @@ const Homepage = () => {
       <div>
         {/**Welcome Stops here */}
         <div className="text-black flex flex-col lg:flex-row justify-around mt-3">
-          <div class=" hero-content text-neutral-content">
-            <div class="max-w-md text-black text-center lg:text-left ">
-              <h1 class="mb-2 text-3xl font-bold ">Opeyemi Mega Eye Center </h1>
-              <p class="mb-2">
+          <div className=" hero-content text-neutral-content">
+            <div className="max-w-md text-black text-center lg:text-left ">
+              <h1 className="mb-2 text-3xl font-bold ">Opeyemi Mega Eye Center </h1>
+              <p className="mb-2">
                 Opeyemi Mega Eye Centre is a world class health facility
                 dedicated to curing and preventing eye defects. If you're
                 looking for an eye clinic near you, you might have just
                 stumbled upon one!
               </p>
               <a href="/appointment">
-                <button class="btn btn-primary">Book Appointment</button>
+                <button className="px-6 py-2 text-white transition-colors duration-200 transform bg-purple rounded-md hover:bg-midnight focus:outline-none focus:bg-midnight">
+                  Book Appointment
+                </button>
               </a>
             </div>
           </div>
           <div className="bg-black p-6">
-            <div class="space-y-3 text-white bg-black px-6 py-12 border-solid border-3 border-white">
+            <div className="space-y-3 text-white bg-black px-6 py-12 border-solid border-3 border-white">
               {/* <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:bg-blue-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +64,7 @@ const Homepage = () => {
                 </svg>
               </span> */}
 
-              <h1 class="text-2xl font-semibold text-gray-700">
+              <h1 className="text-2xl font-semibold text-gray-700">
                 Working Hours
               </h1>
               <li>Monday: 8am – 8pm</li>
@@ -79,7 +81,7 @@ const Homepage = () => {
         <section className="mt-20">
           <div className=" m-[auto] max-w-6xl items-center space-y-6 sm:space-y-12 ">
             <div>
-              <h1 class="uppercase text-3xl font-light text-center text-gray-800  lg:text-4xl italic">
+              <h1 className="uppercase text-3xl font-light text-center text-gray-800  lg:text-4xl italic">
                 Services
               </h1>
             </div>
@@ -179,18 +181,18 @@ const Homepage = () => {
         </section>
         {/**Services ends here */}
         {/**Explore starts */}
-        <section class="bg-black dark:bg-gray-900 mt-6 ">
-          <div class="container px-6 py-10 mx-auto">
-            <div class="mt-2">
-              <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
-              <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
-              <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+        <section className="bg-black dark:bg-gray-900 mt-6 ">
+          <div className="container px-6 py-10 mx-auto">
+            <div className="mt-2">
+              <span className="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+              <span className="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
+              <span className="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
             </div>
 
-            <div class="mt-8 xl:mt-12 lg:flex lg:items-center">
-              <div class="w-full lg:w-1/2 grid grid-cols-1 gap-8 xl:gap-16 md:grid-cols-2">
-                <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
+            <div className="mt-8 xl:mt-12 lg:flex lg:items-center">
+              <div className="w-full lg:w-1/2 grid grid-cols-1 gap-8 xl:gap-16 md:grid-cols-2">
+                <div className="space-y-3">
+                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -211,15 +213,15 @@ const Homepage = () => {
                     OUTREACH
                   </h1>
 
-                  <p class="text-gray-500 dark:text-gray-300 text-white">
+                  <p className="text-gray-500 dark:text-gray-300 text-white">
                     Outreach in Opeyemi Eye Clinic make a quiet impact in the
                     field of sight restoration and prevention of blindness in
                     the society.
                   </p>
                 </div>
 
-                <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
+                <div className="space-y-3">
+                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -246,15 +248,15 @@ const Homepage = () => {
                     EYECARE MEASURES
                   </h1>
 
-                  <p class="text-gray-500 dark:text-gray-300 text-white">
+                  <p className="text-gray-500 dark:text-gray-300 text-white">
                     Your eyes are an important part of your health. There are
                     many things you can do to keep them healthy and make sure
                     you are seeing your best.
                   </p>
                 </div>
 
-                <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
+                <div className="space-y-3">
+                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -275,7 +277,7 @@ const Homepage = () => {
                     OUR CLINIC
                   </h1>
 
-                  <p class="text-gray-500 dark:text-gray-300 text-white">
+                  <p className="text-gray-500 dark:text-gray-300 text-white">
                     Who we are and what we do
                     <br />
                     We help in fighting against preventable blindness in Nigeria
@@ -284,7 +286,7 @@ const Homepage = () => {
                 </div>
 
                 {/* <div class="space-y-3">
-                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
+                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl text-white dark:bg-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6"
@@ -314,7 +316,7 @@ const Homepage = () => {
                 </div> */}
               </div>
 
-              <div class="hidden lg:flex lg:w-1/2 lg:justify-center">
+              <div className="hidden lg:flex lg:w-1/2 lg:justify-center">
                 <img
                   class="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full"
                   src={pic}
@@ -326,28 +328,28 @@ const Homepage = () => {
         </section>
         {/** Explore stops */}
         {/**Team starts here */}
-        <section class="bg-white dark:bg-gray-900">
-          <div class="container px-6 py-10 mx-auto">
-            <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+        <section className="bg-white dark:bg-gray-900">
+          <div className="container px-6 py-10 mx-auto">
+            <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
               Our Executive Team
             </h1>
-            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-              <div class="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+            <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+              <div className="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple dark:border-gray-700 dark:hover:border-transparent">
                 <img
                   class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src={ceo}
                   alt=""
                 />
 
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+                <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
                   Catalyst
                 </h1>
 
-                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+                <p className="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
                   Director
                 </p>
 
-                <div class="flex mt-3 -mx-2">
+                <div className="flex mt-3 -mx-2">
                   <a
                     href="#"
                     class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -395,22 +397,22 @@ const Homepage = () => {
                 </div>
               </div>
 
-              <div class="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+              <div className="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple dark:border-gray-700 dark:hover:border-transparent">
                 <img
                   class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                   alt=""
                 />
 
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+                <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
                   Johnny Cage
                 </h1>
 
-                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+                <p className="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
                   Eye Specialist
                 </p>
 
-                <div class="flex mt-3 -mx-2">
+                <div className="flex mt-3 -mx-2">
                   <a
                     href="#"
                     class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -458,22 +460,22 @@ const Homepage = () => {
                 </div>
               </div>
 
-              <div class="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+              <div className="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple dark:border-gray-700 dark:hover:border-transparent">
                 <img
                   class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                   alt=""
                 />
 
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+                <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
                   Mamba Cage
                 </h1>
 
-                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+                <p className="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
                   Doctor
                 </p>
 
-                <div class="flex mt-3 -mx-2">
+                <div className="flex mt-3 -mx-2">
                   <a
                     href="#"
                     class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"

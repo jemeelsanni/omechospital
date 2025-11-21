@@ -69,77 +69,77 @@ const AddDoctor = () => {
       <div className="">
         <Sidebar />
         <div className="w-full mt-10 h-full flex  items-center justify-center">
-          <div class=" w-full bg-white">
-            <div class="px-10">
-              <div class="md:w-full  flex flex-col justify-center items-center ">
-                <div class="flex w-40 md:w-40 items-center">
-                  <h1 class="lg:text-2xl font-medium pr-2 leading-5 text-gray-800">
+          <div className=" w-full bg-white">
+            <div className="px-10">
+              <div className="md:w-full  flex flex-col justify-center items-center ">
+                <div className="flex w-40 md:w-40 items-center">
+                  <h1 className="lg:text-2xl font-medium pr-2 leading-5 text-gray-800">
                     Add Doctors
                   </h1>
                 </div>
-                <p class="mt-4 text-sm leading-5 text-gray-600">
+                <p className="mt-4 text-sm leading-5 text-gray-600">
                   Information about the Doctor could go here .
                 </p>
               </div>
-              <div class="lg:flex justify-between flex-col  pb-10">
+              <div className="lg:flex justify-between flex-col  pb-10">
                 <div>
-                  <div class="md:flex items-center  w-full justify-center lg:mt-0 mt-4">
-                    <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
+                  <div className="md:flex items-center  w-full justify-center lg:mt-0 mt-4">
+                    <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
                       <label
-                        class="text-sm leading-bg-bubble-gumnone text-gray-800"
+                        className="text-sm leading-bg-bubble-gumnone text-gray-800"
                         id="fir5e6092fstName"
                       >
                         Name of Doctor
                       </label>
                       <input
                         type="text"
-                        tabindex="0"
+                        tabIndex="0"
                         name="DRName"
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
+                        className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
                         aria-labelledby="firstName"
                         onChange={(e) => setDRName(e.target.value)}
                         placeholder="John"
                       />
                     </div>
-                    <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
+                    <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
                       <label
-                        class="text-sm leading-none text-gray-800"
+                        className="text-sm leading-none text-gray-800"
                         id="lastName"
                       >
                         Phone Number
                       </label>
                       <input
                         type="text"
-                        tabindex="0"
+                        tabIndex="0"
                         name="PhoneNumber"
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
+                        className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
                         aria-labelledby="lastName"
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         placeholder="Doe"
                       />
                     </div>
-                    <div class="md:w-64 md:ml-12 md:mt-0 mt-4">
+                    <div className="md:w-64 md:ml-12 md:mt-0 mt-4">
                       <label
-                        class="text-sm leading-none text-gray-800"
+                        className="text-sm leading-none text-gray-800"
                         id="lastName"
                       >
                         Email Address
                       </label>
                       <input
                         type="email"
-                        tabindex="0"
+                        tabIndex="0"
                         name="Email"
                         onChange={(e) => setEmail(e.target.value)}
-                        class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
+                        className="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
                         aria-labelledby="lastName"
                         placeholder="Doe"
                       />
                     </div>
                   </div>
-                  <div class="md:flex space-y-10 justify-between xl:justify-center xl:w-full   items-center  mt-8">
-                    <div class="md:w-[20rem] md:ml-12  mt-4 ">
+                  <div className="md:flex space-y-10 justify-between xl:justify-center xl:w-full   items-center  mt-8">
+                    <div className="md:w-[20rem] md:ml-12  mt-4 ">
                       <label
-                        class="text-sm leading-none w-40 text-gray-800"
+                        className="text-sm leading-none w-40 text-gray-800"
                         id="emailAddress"
                       >
                         About Doctor
@@ -163,24 +163,16 @@ const AddDoctor = () => {
                       }}
                     />
                     <div className="">
-                      {!loading ? (
-                        <>
-                          {" "}
-                          <button
-                            onClick={addProfile}
-                            className="mr-20 bg-purple w-40 py-2 text-white font-bold hover:bg-midnight transition ease-in "
-                          >
-                            Add Profile
-                          </button>
-                        </>
-                      ) : (
-                        <>
-                          {" "}
-                          <button className="mr-20 bg-purple w-40 py-2 text-white font-bold hover:bg-midnight transition ease-in ">
-                            <ClipLoader size={20} color="white" />
-                          </button>
-                        </>
-                      )}
+                      <button
+                        onClick={addProfile}
+                        disabled={loading}
+                        className="px-6 py-2 text-white transition-colors duration-200 transform bg-purple rounded-md hover:bg-midnight focus:outline-none focus:bg-midnight disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                      >
+                        {loading && (
+                          <ClipLoader size={20} color="white" />
+                        )}
+                        {loading ? "Adding Profile..." : "Add Profile"}
+                      </button>
                     </div>
                   </div>
                 </div>

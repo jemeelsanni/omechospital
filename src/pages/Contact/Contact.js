@@ -234,28 +234,17 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex items-center">
-                  {loading ? (
-                    <>
-                      <div
-                        type="submit"
-                        disabled
-                        className=" bg-black rounded flex justify-center items-center w-24 py-2 text-white px-8 "
-                      >
-                        <ClipLoader size={20} color="white" />
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      {" "}
-                      <button
-                        type="submit"
-                        onClick={handleSubmit}
-                        className="focus:outline-none bg-black transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white font-bold px-8 py-2 text-sm leading-6"
-                      >
-                        Submit
-                      </button>
-                    </>
-                  )}
+                  <button
+                    type="submit"
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="px-6 py-2 text-white transition-colors duration-200 transform bg-purple rounded-md hover:bg-midnight focus:outline-none focus:bg-midnight disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                  >
+                    {loading && (
+                      <ClipLoader size={20} color="white" />
+                    )}
+                    {loading ? "Submitting..." : "Submit"}
+                  </button>
                   <div>
                     <h1 className="font-bold pl-4">{message}</h1>
                   </div>

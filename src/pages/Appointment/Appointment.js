@@ -83,7 +83,7 @@ const Appointment = () => {
       />
       <Navbar />
 
-      <h1 className="text-2xl mx-20 font-semibold mt-12 lg:text-3xl">
+      <h1 className="text-2xl mx-20 font-semibold mt-12 lg:text-5xl">
         Fill and submit
       </h1>
       <div className="p-6 sm:p-12 dark:bg-gray-900 dark:text-gray-100 rounded-lg shadow-md lg:mx-20 mx-1 my-6">
@@ -168,18 +168,18 @@ const Appointment = () => {
         </div>
       </div>
 
-      <section class="w-full max-w-2xl px-6 py-4 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+      <section className="w-full max-w-2xl px-6 py-4 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
         <form
           onSubmit={(e) => submitHandler(e)}
-          class="mt-6 "
+          className="mt-6"
           target="_top"
           action="mailto:adetifaboluwatife@gmail.com"
           method="post"
           encType="text/plain"
         >
-          <div class="items-center -mx-2 md:flex">
-            <div class="w-full mx-2">
-              <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
+          <div className="items-center -mx-2 md:flex">
+            <div className="w-full mx-2">
+              <label className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Name
               </label>
 
@@ -187,13 +187,13 @@ const Appointment = () => {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 type="text"
               />
             </div>
 
-            <div class="w-full mx-2">
-              <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
+            <div className="w-full mx-2">
+              <label className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Hospital Number
               </label>
 
@@ -201,15 +201,15 @@ const Appointment = () => {
                 required
                 value={hn}
                 onChange={(e) => setHn(e.target.value)}
-                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 type="text"
               />
             </div>
           </div>
 
-          <div class="items-center -mx-2 md:flex">
-            <div class="w-full mx-2">
-              <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
+          <div className="items-center -mx-2 md:flex">
+            <div className="w-full mx-2">
+              <label className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Appointment Date
               </label>
 
@@ -217,13 +217,13 @@ const Appointment = () => {
                 required
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 type="date"
               />
             </div>
 
-            <div class="w-full mx-2">
-              <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
+            <div className="w-full mx-2">
+              <label className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Appointment Time
               </label>
 
@@ -231,14 +231,14 @@ const Appointment = () => {
                 required
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 type="time"
               />
             </div>
           </div>
 
-          <div class="w-full mt-4">
-            <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
+          <div className="w-full mt-4">
+            <label className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">
               Message
             </label>
 
@@ -246,31 +246,22 @@ const Appointment = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              class="block w-full h-40 px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+              className="block w-full h-40 px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
             ></textarea>
           </div>
 
-          <div class="flex justify-center mt-6">
+          <div className="flex justify-center mt-6">
             <button
               type="submit"
-              class="px-4 py-2 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
+              disabled={loading}
+              className="px-6 py-2 text-white transition-colors duration-200 transform bg-purple rounded-md hover:bg-midnight focus:outline-none focus:bg-midnight disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
             >
-              Submit
+              {loading && (
+                <div className="w-5 h-5 border-2 border-dashed rounded-full animate-spin border-white"></div>
+              )}
+              {loading ? "Submitting..." : "Submit"}
             </button>
           </div>
-          {loading ? (
-            <div className="py-4 flex">
-              <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-violet-400"></div>
-            </div>
-          ) : (
-            <button
-              style={{ color: "white", background: "blue" }}
-              type="submit"
-              className="text-red-600 px-3 py-2 font-semibold rounded "
-            >
-              Submit
-            </button>
-          )}
         </form>
       </section>
       <br />

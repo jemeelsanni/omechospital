@@ -24,7 +24,7 @@ const Services = () => {
       </div>
 
       <section>
-        <h1 class="text-3xl py-2 font-medium text-center leading-tight mt-0 mb-2 text-blue-600">
+        <h1 className="text-3xl py-2 font-medium text-center leading-tight mt-0 mb-2 text-blue-600">
           Services offered by Opeyemi Mega Eye Center.
         </h1>
         <p className="text-center pb-5">
